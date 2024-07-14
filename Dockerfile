@@ -1,7 +1,7 @@
 FROM python:3.8
-WORKDIR /app
-COPY . /app
+WORKDIR /newproject
+COPY . /newproject
 RUN pip install flask
-EXPOSE 8080
+EXPOSE 9090
 ENTRYPOINT ["python"]
 CMD ["app.py"]
